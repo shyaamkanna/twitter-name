@@ -44,7 +44,7 @@ def main():
                 name=f'Ameen_Manna|{emoji_follower_count(user)} Followers')
 
         logger.info("Waiting to refresh..")
-        time.sleep(60)
+        time.sleep(6)
 
 
 if __name__ == "__main__":
