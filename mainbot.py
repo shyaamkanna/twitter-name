@@ -42,7 +42,7 @@ def main():
                 f'Your amount of followers has changed, updating twitter profile: {validate_follower_count(user)} -> {emoji_follower_count(user)}')
             # Updating your twitterprofile with your name including the amount of followers in emoji style
             api.update_profile(
-                name=f'Diazonic Labs|{emoji_follower_count(user)} Followers')
+                name=f'Ameen|{emoji_follower_count(user)} Followers')
 
         logger.info("Waiting to refresh..")
         time.sleep(60)
