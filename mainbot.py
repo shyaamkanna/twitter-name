@@ -26,12 +26,13 @@ def emoji_follower_count(user):
     return emoji_followers
 
 
+
 def main():
     api = create_api()
 
     while True:
         # change to your own twitter_handle
-        user = api.get_user('Diazonic Labs')
+        user = api.get_user('diazoniclabs')
 
         if validate_follower_count(user) == emoji_follower_count(user):
             logger.info(
@@ -41,11 +42,12 @@ def main():
                 f'Your amount of followers has changed, updating twitter profile: {validate_follower_count(user)} -> {emoji_follower_count(user)}')
             # Updating your twitterprofile with your name including the amount of followers in emoji style
             api.update_profile(
-                name=f'Ameen_Manna|{emoji_follower_count(user)} Followers')
+                name=f'Diazonic Labs|{emoji_follower_count(user)} Followers')
 
         logger.info("Waiting to refresh..")
-        time.sleep(6)
+        time.sleep(60)
 
 
 if __name__ == "__main__":
     main()
+
